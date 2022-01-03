@@ -1,10 +1,8 @@
-import react from "react";
+import React from "react";
+import AddUser from "./component/UI/AddUsers";
 function App() {
   return (
-    <div>
-      <label htmlFor='username'>User Name</label>
-     <input id="username" type="text"></input>
-    </div>
+    <AddUser/>
   );
 }
 
