@@ -33,6 +33,8 @@ const AddUser = (props)=>{
                 tittle:"Invalid Input Age",
                 msg: "Please entered a valid age (>0)",
             });
+            return;
+            
         }
         props.onAddUserDetails(enteredName, enteredAge);
         setAge('');
@@ -40,10 +42,11 @@ const AddUser = (props)=>{
     }
     const errorHandler =()=>{
         setError(null);
+        
     }
     return(
         <div> 
-        {isError && <ErrorHandler text="An Error Ouccred!" message="Something Went Wrong!" click={errorHandler}/>} 
+        {isError && <ErrorHandler text={isError.tittle} message={isError.msg} click={errorHandler}/>} 
         <Card className={classes.input}>      
         <form id='1' onSubmit={addEventHandler} >
                 <label htmlFor="username">User Name</label> 
