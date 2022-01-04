@@ -11,11 +11,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-form{
-  width: 60%;
-  height: 444px;
-  margin: 2% 20% 20% 20%;
-  border-style: solid;
-  border-radius: 12px;
+html{
+  background: #1f1f1f;
 }
