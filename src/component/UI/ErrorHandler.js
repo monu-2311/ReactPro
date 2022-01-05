@@ -1,11 +1,11 @@
-import React from "react";
+import React,{Fragment} from "react";
 import Button from "./Button";
 import Card from "./Card";
 import classes from "./ErrorHandler.module.css";
 
 const ErrorHandler=props=>{
     return(
-        <div>
+        <Fragment>
             <div className={classes.backdrop} onClick={props.click}/>
         <Card className={classes.modal}>
             <header className={classes.header}>
@@ -19,7 +19,7 @@ const ErrorHandler=props=>{
             </footer>
         </Card>
           
-        </div>
+        </Fragment>
     );
 
 };
